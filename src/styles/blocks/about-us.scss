@@ -65,6 +65,11 @@
 
   &__img {
     grid-area: img;
+    transition-duration: $effectDuration;
+
+    &:hover {
+      transform: scale(1.02);
+    }
 
     img {
       display: block;

@@ -2,6 +2,7 @@
   scroll-behavior: smooth;
   font-family: Inter, sans-serif;
   background: $background-color;
+  box-sizing: border-box;
 
   &__body {
     min-width: 320px;
@@ -19,11 +20,9 @@
     top: 0;
     right: 0;
     left: 0;
+    transition: all $effectDuration;
     transform: translateX(-100%);
-
     opacity: 0;
-
-    transition: all 500ms;
 
     &:target {
       pointer-events: all;
@@ -36,3 +35,5 @@
     overflow: hidden;
   }
 }
+
+

@@ -6,6 +6,14 @@
     justify-content: center;
   }
 
+  &__picture {
+    transition-duration: $effectDuration;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
   &__img {
     display: block;
     width: calc(100% + 24px);

@@ -1,11 +1,8 @@
 .menu {
-  overflow: hidden;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
 
   background-color: $background-color;
 
@@ -19,14 +16,15 @@
   }
 
   &__content {
-    overflow: auto;
     flex: 1;
     min-height: 0;
+    box-sizing: border-box;
   }
 
   &__bottom {
     flex: 0 0 auto;
-    margin-top: auto;
+    box-sizing: border-box;
     margin-bottom: 30px;
   }
 }
+
