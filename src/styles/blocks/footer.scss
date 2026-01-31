@@ -35,9 +35,22 @@
 
   &__logo {
     display: block;
+    transition-duration: transform $effectDuration ease;
+    transform-origin: center;
+    will-change: transform;
+
+    &:hover {
+      transform: scale(1.08);
+    }
   }
 
   &__arrow-link {
+    transition-duration: $effectDuration;
+
+    &:hover {
+      transform: scale(1.08);
+    }
+
     @include on-tablet {
       grid-column: -2 / -1; // остання колонка
       justify-self: end;
@@ -69,8 +82,17 @@
     }
   }
 
+  &__icon-link {
+    display: inline-flex;
+  }
+
   &__icon {
     display: block;
+    transition-duration: transform $effectDuration ease;
+  }
+
+  &__icon-link:hover &__icon {
+    transform: scale(1.08);
   }
 
   &__text {
